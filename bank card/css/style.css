@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1C1C27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Lato' ,sans-serif;
+}
+body::after{
+    content: '';
+    background: linear-gradient(rgb(59, 186, 108),rgb(41, 41, 142));
+    border-radius: 100%;
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    transform: translateX(20%);
+    z-index: -1;
+}
+/* .circle-back {
+    background: linear-gradient(rgb(59, 186, 108),rgb(41, 41, 142));
+    border-radius: 100%;
+    width: 25rem;
+    height: 25rem;
+    transform: translateX(20%);
+    z-index: -1;
+} */
+.card-box {
+    width: 27rem;
+    height: 17rem;
+    background: rgba(252, 252, 252, 0.1);
+    backdrop-filter: blur(0.5rem);
+    border-radius: 1rem;
+    border: #838383 solid 0.1rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: 10% 50% 20% 20%;
+    transition: all 500ms ease;
+}
+.card-box img:nth-child(1) {
+    width: 3.5rem;
+    justify-self: end;
+}
+.card-box img:nth-child(2) {
+    border-radius: 0.5rem;
+    width: 3rem;
+    align-self: center;
+}
+.h4-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.card-box h4 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+.h5-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-box h5 {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.05rem;
+}
+.card-box:hover {
+    transform: translateY(-1rem);
+    transition: all 500ms ease;
+}
+
